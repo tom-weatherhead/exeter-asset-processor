@@ -1,0 +1,30 @@
+LIBRARY ASSETPROCESSOR
+
+DESCRIPTION 'Exeter Asset Processor Library; Copyright (c) 2003, Daring Software Incorporated'
+; EXETYPE     WINDOWS 3.1
+
+; CODE      	MOVEABLE DISCARDABLE
+; DATA      	PRELOAD SINGLE
+
+
+EXPORTS	
+
+	; Required by Windows.
+	DllMain
+
+	; Real (non-test) APIs.
+	; ?CreateCompositedThumbnailFile@@YA_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0HH_NHAAV12@@Z
+	CreateCompositedThumbnailFile2
+
+	; Test APIs; remove from the production build.
+	?ImportAndDisplayDocument@@YAXABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+	?ConvertToPalettedTest@@YA_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAV12@@Z
+	?ExportToGIFTest@@YA_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0AAV12@@Z
+	?ExportToTIFFTest@@YA_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0AAV12@@Z
+	?ExAPTestCreateThumbnail@@YAXXZ
+	; ?AutoEqualizeTest@@YAXABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+	?ExploreJPEGFile@@YAXABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+	?ExploreICOFile@@YAXABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+	?Non8BitPaletteTest@@YAXABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+
+; **** End of File ****

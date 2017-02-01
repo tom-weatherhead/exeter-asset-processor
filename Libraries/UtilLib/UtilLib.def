@@ -1,0 +1,21 @@
+LIBRARY UTILLIB
+
+DESCRIPTION 'Daring Utility Library; Copyright (c) 2003, Daring Software Incorporated'
+; EXETYPE     WINDOWS 3.1
+
+; CODE      	MOVEABLE DISCARDABLE
+; DATA      	PRELOAD SINGLE
+
+
+EXPORTS	
+
+	; Required by Windows.
+	DllMain
+
+	?CreateBitSource@ExUtilBitSourceInterface@@SA?AV?$ExAPAutoPtr@VExUtilBitSourceInterface@@@@AAVExUtilByteSourceInterface@@@Z
+	?CreateBitSink@ExUtilBitSinkInterface@@SA?AV?$ExAPAutoPtr@VExUtilBitSinkInterface@@@@AAVExUtilByteSinkInterface@@@Z
+	?CreateByteSourceMemory@ExUtilByteSourceInterface@@SA?AV?$ExAPAutoPtr@VExUtilByteSourceInterface@@@@PAEH@Z
+	?StdioCreate@ExUtilFileReaderBaseInterface@@SA?AV?$ExAPAutoPtr@VExUtilFileReaderBaseInterface@@@@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@_N1@Z
+	?StdioCreate@ExUtilFileWriterBaseInterface@@SA?AV?$ExAPAutoPtr@VExUtilFileWriterBaseInterface@@@@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@_N1@Z
+
+; **** End of File ****

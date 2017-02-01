@@ -1,0 +1,38 @@
+// Version resource file.
+// Strings must be explicitly null-terminated.
+
+#include <ver.h>	// Version system include file for rc
+
+VS_VERSION_INFO     VERSIONINFO
+  FILEVERSION       0,0,0
+  PRODUCTVERSION    0,0,0
+  FILEFLAGSMASK     VS_FFI_FILEFLAGSMASK
+  FILEFLAGS         VS_FF_DEBUG|VS_FF_PRIVATEBUILD|VS_FF_PRERELEASE
+  FILEOS            VOS_DOS_WINDOWS32
+  FILETYPE          VFT_DLL
+  FILESUBTYPE       VFT2_UNKNOWN
+BEGIN
+	BLOCK "VarFileInfo" 
+	BEGIN 
+		VALUE "Translation", 0x409, 1252
+			// English language (0x409) and the Windows ANSI codepage (1252)
+	END
+	BLOCK "StringFileInfo"
+	BEGIN
+		BLOCK "040904E4" // Lang=US English, CharSet=Windows Multilingual
+		BEGIN 
+			VALUE "Comments",						"No comment.\0"
+			VALUE "CompanyName",				"Daring Software Incorporated\0"
+			VALUE "FileDescription",		"Daring Asset Processor Library\0"
+			VALUE "FileVersion",				"0.0.0\0"
+			VALUE "InternalName",				"AssetProcessor\0"
+			VALUE "LegalCopyright",			"Copyright (c) 2003-2005 Daring Software Incorporated.\0"
+			VALUE "LegalTrademarks",		"Daring Exeter(R)\0"
+			VALUE "OriginalFilename",		"AssetProcessor.dll\0"
+			VALUE "PrivateBuild",				"Private build.  Do not distribute.\0"
+			VALUE "ProductName",				"Daring Exeter(R)\0"
+			VALUE "ProductVersion",			"0.0.0\0"
+			VALUE "SpecialBuild",				"This build is special.\0"
+		END
+	END
+END

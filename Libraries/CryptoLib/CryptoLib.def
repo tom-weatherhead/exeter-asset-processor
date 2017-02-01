@@ -1,0 +1,15 @@
+LIBRARY CRYPTOLIB
+
+DESCRIPTION 'Daring Cryptographic Library; Copyright (c) 2003, Daring Software Incorporated'
+; EXETYPE     WINDOWS 3.1
+
+; CODE      	MOVEABLE DISCARDABLE
+; DATA      	PRELOAD SINGLE
+
+
+EXPORTS	
+
+	; Required by Windows.
+	DllMain
+
+; **** End of File ****
